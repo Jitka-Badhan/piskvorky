@@ -4,8 +4,9 @@ body {
 }
 
 h1 {
-  font-family: 'Lobster', cursive;
-  font-size: 40px;
+  font-family: 'Lobster';
+  font-size: 50px;
+  margin: 16px;
 }
 
 .container {
@@ -19,4 +20,6 @@ h1 {
 
 .uvodni_text {
   text-align: center;
+  line-height: 1.5;
+  padding: 10px;
 }
