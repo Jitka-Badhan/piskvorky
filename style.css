@@ -13,4 +13,10 @@ h1 {
   color: white;
   display: flex;
   flex-flow: column;
+  width: 400px;
+  margin: 65px auto;
+}
+
+.uvodni_text {
+  text-align: center;
 }
