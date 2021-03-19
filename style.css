@@ -1,7 +1,11 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-image: linear-gradient(#615dad, #ffc8da);
-  background-size: 100vh 100vw;
+  background-image: linear-gradient(#615dad 0%, #ffc8da 80%);
+  background-size: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h1 {
@@ -10,11 +14,8 @@ h1 {
   margin: 16px;
 }
 
-.container {
+.obsah {
   background-color: #283e50;
-  display: flex;
-  flex-flow: column;
-  width: 430px;
   margin: 50px auto;
   border-radius: 10px 10px 0 0;
 }
@@ -23,8 +24,14 @@ h1 {
   border-radius: 10px 10px 0 0;
 }
 
-.container,
-button {
+.obsah,
+.ctyrlistky,
+a {
+  width: 430px;
+}
+
+.obsah,
+a {
   color: white;
 }
 
@@ -34,7 +41,8 @@ button {
   padding: 20px;
 }
 
-button {
+a {
+  display: block;
   font-size: 16px;
   border: none;
 }
@@ -43,7 +51,9 @@ button {
   background-color: #1fcca4;
 }
 
-.pravidla:hover {
+.pravidla:hover,
+.pravidla:active,
+.pravidla:focus {
   background-color: #1cbb96;
 }
 
@@ -52,6 +62,8 @@ button {
   border-top: 0.5px solid #283e50;
 }
 
-.zacit-hrat:hover {
+.zacit-hrat:hover,
+.zacit-hrat:active,
+.zacit-hrat:focus {
   background-color: #0090e9;
 }
