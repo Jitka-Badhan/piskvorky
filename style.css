@@ -7,7 +7,7 @@ body {
   justify-content: center;
   align-items: center;
   color: white;
-  line-height: 1.5;
+  line-height: 1.3;
 }
 
 h1 {
@@ -17,11 +17,33 @@ h1 {
   margin: 0;
 }
 
+.rules h1 {
+  margin: 40px auto;
+}
+
 .main {
   background-color: #283e50;
-  width: 430px;
-  margin: 10px;
+  width: 350px;
+  margin: 30px;
   border-radius: 10px 10px 0 0;
+}
+
+.rules--list,
+.rules--gallery {
+  margin: 0 30px;
+}
+
+.rules--list {
+  padding: 0px 15px 0px 25px;
+}
+
+.rules--list li {
+  padding-left: 10px;
+  padding-bottom: 15px;
+}
+
+.rules--list li:last-of-type {
+  padding-bottom: 0;
 }
 
 .cross,
@@ -29,6 +51,11 @@ h1 {
   display: inline-block;
   width: 1em;
   height: 1em;
+  vertical-align: text-bottom;
+}
+
+.trans_white {
+  filter: invert(100%);
 }
 
 .homepage--img {
@@ -42,8 +69,26 @@ a {
   padding: 15px 20px;
 }
 
+.rules--gallery {
+  padding: 0;
+}
+
 .rules--gallery img {
   width: 100%;
+  margin-top: 50px;
+}
+
+.rules--gallery figure {
+  margin: 0;
+}
+
+.rules--gallery figure:last-child {
+  margin-bottom: 50px;
+}
+
+.rules--gallery figcaption {
+  text-align: center;
+  font-style: italic;
 }
 
 a {
