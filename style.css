@@ -14,22 +14,19 @@ h1 {
   margin: 0;
 }
 
-.obsah {
+.main {
   background-color: #283e50;
-  margin: 10px auto;
-  border-radius: 10px 10px 0 0;
-}
-
-.ctyrlistky {
-  border-radius: 10px 10px 0 0;
-}
-
-.obsah,
-.ctyrlistky {
   width: 430px;
+  margin: 10px;
+  border-radius: 10px 10px 0 0;
 }
 
-.uvodni_text,
+.homepage--img {
+  border-radius: 10px 10px 0 0;
+  width: inherit;
+}
+
+.homepage--text,
 a {
   color: white;
   text-align: center;
@@ -42,23 +39,23 @@ a {
   text-decoration: none;
 }
 
-.pravidla {
+.navigation--rules {
   background-color: #1fcca4;
 }
 
-.pravidla:hover,
-.pravidla:active,
-.pravidla:focus {
+.navigation--rules:hover,
+.navigation--rules:active,
+.navigation--rules:focus {
   background-color: #1cbb96;
 }
 
-.zacit-hrat {
+.navigation--play {
   background-color: #0197f6;
   border-top: 0.5px solid #283e50;
 }
 
-.zacit-hrat:hover,
-.zacit-hrat:active,
-.zacit-hrat:focus {
+.navigation--play:hover,
+.navigation--play:active,
+.navigation--play:focus {
   background-color: #0090e9;
 }
