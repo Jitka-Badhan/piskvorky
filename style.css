@@ -6,11 +6,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: white;
+  line-height: 1.5;
 }
 
 h1 {
   font-family: 'Lobster';
   font-size: 50px;
+  text-align: center;
   margin: 0;
 }
 
@@ -21,6 +24,13 @@ h1 {
   border-radius: 10px 10px 0 0;
 }
 
+.cross,
+.circle {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+}
+
 .homepage--img {
   border-radius: 10px 10px 0 0;
   width: inherit;
@@ -28,10 +38,12 @@ h1 {
 
 .homepage--text,
 a {
-  color: white;
   text-align: center;
-  line-height: 1.5;
   padding: 15px 20px;
+}
+
+.rules--gallery img {
+  width: 100%;
 }
 
 a {
@@ -39,13 +51,17 @@ a {
   text-decoration: none;
 }
 
-.navigation--rules {
+.navigation--rules,
+.navigation--homepage {
   background-color: #1fcca4;
 }
 
 .navigation--rules:hover,
 .navigation--rules:active,
-.navigation--rules:focus {
+.navigation--rules:focus,
+.navigation--homepage:hover,
+.navigation--homepage:active,
+.navigation--homepage:focus {
   background-color: #1cbb96;
 }
 
@@ -58,4 +74,10 @@ a {
 .navigation--play:active,
 .navigation--play:focus {
   background-color: #0090e9;
+}
+
+.navigation--rules:visited,
+.navigation--play:visited,
+.navigation--homepage:visited {
+  color: white;
 }
