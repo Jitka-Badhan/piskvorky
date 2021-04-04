@@ -28,6 +28,17 @@ h1 {
   border-radius: 10px 10px 0 0;
 }
 
+.homepage--img {
+  border-radius: 10px 10px 0 0;
+  width: inherit;
+}
+
+.homepage--text,
+a {
+  text-align: center;
+  padding: 15px 20px;
+}
+
 .rules--list,
 .rules--gallery {
   margin: 0 30px;
@@ -56,17 +67,6 @@ h1 {
 
 .trans_white {
   filter: invert(100%);
-}
-
-.homepage--img {
-  border-radius: 10px 10px 0 0;
-  width: inherit;
-}
-
-.homepage--text,
-a {
-  text-align: center;
-  padding: 15px 20px;
 }
 
 .rules--gallery {
@@ -125,4 +125,31 @@ a {
 .navigation--play:visited,
 .navigation--homepage:visited {
   color: white;
+}
+
+@media screen and (min-width: 800px) {
+  .rules {
+    width: 650px;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .rules--gallery {
+    margin: 0 25px;
+  }
+
+  .rules--gallery figure {
+    width: calc(50% - calc(25px / 2));
+  }
+
+  .rules--gallery figure:nth-child(2n + 1) {
+    margin-right: 25px;
+  }
+
+  .rules--gallery figcaption {
+    font-size: smaller;
+  }
 }
