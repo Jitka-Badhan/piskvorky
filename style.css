@@ -14,6 +14,7 @@ h1 {
   font-family: 'Lobster';
   font-size: 50px;
   text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   margin: 0;
 }
 
@@ -178,19 +179,21 @@ a {
 .play--nav {
   justify-content: space-between;
   align-items: center;
+  margin: 20px 0;
 }
 
 .play--nav--player p {
   margin: 0;
+  font-weight: bold;
   text-transform: uppercase;
 }
 
 .play--nav--player img {
-  margin: 0 10px;
+  margin: 0 7px;
 }
 
 .play--nav--buttons__home {
-  background-color: #1cbb96;
+  background-color: #1fcca4;
   background-image: url(img/home.svg);
 }
 
@@ -200,12 +203,24 @@ a {
   margin-left: 10px;
 }
 
+.play--nav--buttons__home:hover,
+.play--nav--buttons__home:active,
+.play--nav--buttons__home:focus {
+  background-color: #1cbb96;
+}
+
+.play--nav--buttons__reload:hover,
+.play--nav--buttons__reload:active,
+.play--nav--buttons__reload:focus {
+  background-color: #0090e9;
+}
+
 .play--nav--buttons__home,
 .play--nav--buttons__reload {
   background-repeat: no-repeat;
   background-position: center;
-  width: 35px;
-  height: 35px;
+  width: 40px;
+  height: 40px;
   padding: 0;
   border-radius: 5px;
 }
@@ -215,15 +230,23 @@ a {
   flex-wrap: wrap;
   width: 80vmin;
   height: 80vmin;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .play--board button {
+  background-color: rgba(245, 245, 245, 0.4);
   width: 10%;
   padding: 0;
 }
 
+.play--board button:hover,
+.play--board button:active,
+.play--board button:focus {
+  background-color: rgba(245, 245, 245, 0.6);
+}
+
 .play--board,
 .play--board button {
-  border: 0.5px solid black;
+  border: 0.5px solid rgba(0, 0, 0, 0.7);
   border-collapse: collapse;
 }
