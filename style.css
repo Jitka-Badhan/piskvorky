@@ -17,6 +17,8 @@ h1 {
   margin: 0;
 }
 
+/* index.html & pravidla.html */
+
 .rules h1 {
   margin: 40px auto;
 }
@@ -121,6 +123,12 @@ a {
   background-color: #0090e9;
 }
 
+.navigation--rules:link,
+.navigation--play:link,
+.navigation--homepage:link {
+  color: white;
+}
+
 .navigation--rules:visited,
 .navigation--play:visited,
 .navigation--homepage:visited {
@@ -152,4 +160,70 @@ a {
   .rules--gallery figcaption {
     font-size: smaller;
   }
+}
+
+/* hra.html */
+
+.play {
+  max-width: 80vmin;
+  margin: 30px;
+}
+
+.play--nav,
+.play--nav--player,
+.play--nav--buttons {
+  display: flex;
+}
+
+.play--nav {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.play--nav--player p {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.play--nav--player img {
+  margin: 0 10px;
+}
+
+.play--nav--buttons__home {
+  background-color: #1cbb96;
+  background-image: url(img/home.svg);
+}
+
+.play--nav--buttons__reload {
+  background-color: #0197f6;
+  background-image: url(img/restart.svg);
+  margin-left: 10px;
+}
+
+.play--nav--buttons__home,
+.play--nav--buttons__reload {
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 35px;
+  height: 35px;
+  padding: 0;
+  border-radius: 5px;
+}
+
+.play--board {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80vmin;
+  height: 80vmin;
+}
+
+.play--board button {
+  width: 10%;
+  padding: 0;
+}
+
+.play--board,
+.play--board button {
+  border: 0.5px solid black;
+  border-collapse: collapse;
 }
