@@ -250,3 +250,20 @@ a {
   border: 0.5px solid rgba(0, 0, 0, 0.7);
   border-collapse: collapse;
 }
+
+/* JavaScript-edited classes */
+
+.board__field--circle {
+  background-image: url('img/circle.svg');
+}
+
+.board__field--cross {
+  background-image: url('img/cross.svg');
+}
+
+.board__field--circle,
+.board__field--cross {
+  background-repeat: no-repeat;
+  background-size: 75%;
+  background-position: center;
+}
