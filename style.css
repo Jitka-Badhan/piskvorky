@@ -253,6 +253,15 @@ a {
 
 /* JavaScript-edited classes */
 
+@keyframes zoom-in {
+  from {
+    background-size: 0;
+  }
+  to {
+    background-size: 80%;
+  }
+}
+
 .board__field--circle {
   background-image: url('img/circle.svg');
 }
@@ -264,6 +273,8 @@ a {
 .board__field--circle,
 .board__field--cross {
   background-repeat: no-repeat;
-  background-size: 75%;
   background-position: center;
+  background-size: 70%;
+  animation-name: zoom-in;
+  animation-duration: 200ms;
 }
